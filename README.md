@@ -15,33 +15,42 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 
 ## Programme Overview
 
-| Date | Activity | Venue |
-|------|----------|-------|
-| Thursday 1 Oct | Anglo delegates arrive; Icebreaker; Supper | Laurin / Salò |
-| Friday 2 Oct | Keynote lectures & research presentations | Brescia University, Aula G / Aula Magna |
-| Friday 2 Oct (evening) | Gala/Reception Dinner | Laurin, Salò, 19:00 |
-| Saturday 3 Oct | Roundtable discussions | TBC |
-| Sunday 4 Oct | Cultural event; Anglo group depart | Salò |
+| Date | Time | Activity | Venue |
+|------|------|----------|-------|
+| Thursday 1 Oct | Morning | Anglo delegates arrive | Laurin |
+| Thursday 1 Oct | Afternoon | Icebreaker (led by NF) — Anglo plus friends | Salò |
+| Thursday 1 Oct | Evening | Supper | Salò |
+| Friday 2 Oct | 10:00 | Bus to Brescia | — |
+| Friday 2 Oct | Morning | Keynote speakers (1–3) | Brescia University, Aula G |
+| Friday 2 Oct | 12:00–13:15 | Lunch | Dental School |
+| Friday 2 Oct | 13:30 | Keynotes (4–5), Research Reports, BIP session | Aula Magna |
+| Friday 2 Oct | 16:15 | Bus back to Salò | — |
+| Friday 2 Oct | 19:00 | Gala/Reception Dinner; Photocall in garden (weather permitting) at 19:20 | Laurin, Salò |
+| Saturday 3 Oct | — | Roundtable discussions (BIP to attend) | TBC |
+| Sunday 4 Oct | — | Cultural event; Supper; Anglo group depart | Salò |
 
 ---
 
 ## Friday Programme — Keynotes & Research Presentations
 
-### Keynote Speakers
+### Morning — Aula G, Brescia University
 
 1. **[Prof. Stylianos Hatzipanagos](#professor-stylianos-hatzipanagos)** — *Student Perspectives on GenAI and the Future of Assessment*
 2. **[Dr. Nicolas Giraudeau](#dr-nicolas-giraudeau)** — *Innovation and Digitalization in Oral Public Health*
 3. **[Dr. Peter Fritz](#dr-peter-fritz)** — *Artificial Intelligence in Dentistry: Foundations for Ethical and Effective Practice*
+
+### Afternoon — Aula Magna, 13:30
+
 4. **[Dr. Aristomenis Syngelakis](#dr-aristomenis-i-syngelakis)**
 5. **[Prof. Kenneth Eaton](#professor-kenneth-anthony-eaton) & [Dharmesh Chauhan](#dharmesh-chauhan)** — *The Use of AI to Check Manuscripts Prior to Submission to Scientific Journals*
 
-### Research Reports (Chair: Professor Margaret Cox)
+### Research Reports (Chair: [Professor Margaret Cox](#professor-margaret-cox))
 
 - **[Dr. Stephen Deboo](#dr-stephen-deboo)** — *Better Together? Exploring the Complementary Roles of Haptic Mixed Reality and Phantom-Head Simulation in Endodontic Training*
 - **[Dr. Chantal Burgess](#dr-chantal-burgess)** — *Dentistry in Bloom: Can Origami Help Us Assess and Develop Manual Dexterity?*
 - **[Prof. Dieter Schonwetter](#professor-dieter-schonwetter)** — *Round-up of the Day's Themes and Thoughts Going Forward to Saturday's Roundtable*
 
-### BIP Scientific Methodology Session
+### BIP Scientific Methodology Session (Aula Magna, parallel)
 Led by [Dieter Schonwetter](#professor-dieter-schonwetter), [Ken Eaton](#professor-kenneth-anthony-eaton) & [Dr. Anne-Maria Brennan](#dr-ann-marie-brennan)
 
 ---
