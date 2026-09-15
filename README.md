@@ -8,8 +8,8 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 
 ## Documents
 
-- [📄 Delegate Biographies & Keynote Abstracts](13.9%2026%20delegate%20bios%20and%20abstracts.pdf)
-- [📅 Timetable](13.9.26%20timetable%20.pdf)
+- [📄 Delegate Biographies & Keynote Abstracts](15.9%2026%20delegate%20bios%20and%20abstracts.pdf)
+- [📅 Timetable](14.9.26%20timetable%20.pdf)
 
 ---
 
@@ -30,9 +30,10 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 ### Keynote Speakers
 
 1. **[Prof. Stylianos Hatzipanagos](#professor-stylianos-hatzipanagos)** — *Student Perspectives on GenAI and the Future of Assessment*
-2. **[Dr. Nicolas Giraudeau](#dr-nicolas-giraudeau)** — *(presentation TBC)*
+2. **[Dr. Nicolas Giraudeau](#dr-nicolas-giraudeau)** — *Innovation and Digitalization in Oral Public Health*
 3. **[Dr. Peter Fritz](#dr-peter-fritz)** — *Artificial Intelligence in Dentistry: Foundations for Ethical and Effective Practice*
-4. **[Prof. Kenneth Eaton](#professor-kenneth-anthony-eaton) & [Dharmesh Chauhan](#dharmesh-chauhan)** — *The Use of AI to Check Manuscripts Prior to Submission to Scientific Journals*
+4. **[Dr. Aristomenis Syngelakis](#dr-aristomenis-i-syngelakis)**
+5. **[Prof. Kenneth Eaton](#professor-kenneth-anthony-eaton) & [Dharmesh Chauhan](#dharmesh-chauhan)** — *The Use of AI to Check Manuscripts Prior to Submission to Scientific Journals*
 
 ### Research Reports (Chair: Professor Margaret Cox)
 
@@ -60,7 +61,7 @@ Dean of Dental School, University of Brescia, Italy. Chair of IFDEA and FEHDD; F
 Fellow, Centre for Online and Distance Education, University of London. Expertise in AI in learning and teaching, assessment innovation, and online/distance education.
 
 ### Dr. Nicolas Giraudeau
-Associate Professor of Dental Surgery, Université de Montpellier, France.
+Dentist, academic and public health specialist at the University Hospital and University of Montpellier, France. His work focuses on digital oral health and its potential to improve prevention, access to care and health equity, particularly for underserved and vulnerable populations. He founded and coordinates e-DENT, a pioneering teledentistry programme, and leads the "Montpellier Santé Orale" programme. As a digital oral health expert for the World Health Organization, he contributed to the development of the WHO–ITU mOralHealth initiative. Holds doctorates in dental surgery and health law.
 
 ### Dr. Peter Fritz
 Certified specialist in periodontics, Fonthill, Ontario. Holds an MBA (Northwestern), dual law degrees (University of Toronto), and is pursuing a master's in blockchain, cybersecurity and AI at IMD Lausanne. Chairs the Committee on AI and Emerging Digital Technology for the Royal College of Dentists of Canada.
