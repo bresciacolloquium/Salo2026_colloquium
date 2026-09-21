@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doc-Checker Beta Guide</title>
+<style>
+  :root {
+    /* palette: #133458 navy · #838921 olive · #D99B21 gold · #FAF7BB pale yellow */
+    --ink: #133458;
+    --ink-soft: #2f5a86;
+    --paper: #FAF7BB;
+    --surface: #fffef4;
+    --rule: #e8e08c;
+    --text: #17263a;
+    --muted: #736d34;
+    --teal: #838921;
+    --amber: #a3690f;
+    --amber-soft: #fbe9c4;
+    --eyebrow: #D99B21;
+    --accent-bg: #36064D;
+    --accent-text: #FAF7BB;
+    --code-bg: #101826;
+    --code-text: #d9e2ec;
+    --code-muted: #7c8aa0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #FAF7BB;
+      --ink-soft: #D99B21;
+      --paper: #0c2138;
+      --surface: #133458;
+      --rule: #24476b;
+      --text: #eef0da;
+      --muted: #b9c48f;
+      --teal: #b6bd4a;
+      --amber: #D99B21;
+      --amber-soft: #3a2a0d;
+      --eyebrow: #D99B21;
+      --accent-bg: #36064D;
+      --accent-text: #FAF7BB;
+      --code-bg: #0b0f17;
+      --code-text: #d9e2ec;
+      --code-muted: #7c8aa0;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #FAF7BB;
+    --ink-soft: #D99B21;
+    --paper: #0c2138;
+    --surface: #133458;
+    --rule: #24476b;
+    --text: #eef0da;
+    --muted: #b9c48f;
+    --teal: #b6bd4a;
+    --amber: #D99B21;
+    --amber-soft: #3a2a0d;
+    --eyebrow: #D99B21;
+    --accent-bg: #36064D;
+    --accent-text: #FAF7BB;
+    --code-bg: #0b0f17;
+    --code-text: #d9e2ec;
+    --code-muted: #7c8aa0;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--text);
+    font-family: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    padding: 0 16px;
+    padding-block: 48px;
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  h1, h2, h3 {
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .eyebrow {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--eyebrow);
+    margin: 0 0 10px 0;
+  }
+
+  header.hero {
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 32px;
+  }
+
+  header.hero h1 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  header.hero p.lede {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 56ch;
+    margin: 0;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 6px 12px;
+  }
+
+  section.checklist {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin-bottom: 40px;
+  }
+
+  section.checklist h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  section.checklist ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+
+  section.checklist li {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+
+  section.checklist li::before {
+    content: "—";
+    color: var(--teal);
+    flex-shrink: 0;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .step {
+    position: relative;
+    padding-left: 52px;
+  }
+
+  .step-number {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--accent-bg);
+    color: var(--accent-text);
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .step p {
+    margin: 0 0 12px 0;
+    color: var(--text);
+  }
+
+  .step p.note {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .platform-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .platform-tab {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 4px 10px;
+  }
+
+  .codeblock {
+    position: relative;
+    background: var(--code-bg);
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }
+
+  .codeblock pre {
+    margin: 0;
+    padding: 14px 16px;
+    padding-right: 56px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.86rem;
+    color: var(--code-text);
+    white-space: pre;
+  }
+
+  .codeblock .comment { color: var(--code-muted); }
+
+  .copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255,255,255,0.08);
+    color: var(--code-text);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 5px;
+    font-size: 0.72rem;
+    font-family: "Source Sans 3", sans-serif;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  .copy-btn:hover { background: rgba(255,255,255,0.16); }
+  .copy-btn:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+  .expect {
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-top: -2px;
+  }
+  .expect strong { color: var(--ink-soft); font-weight: 600; }
+
+  table.profiles {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin: 12px 0 4px 0;
+  }
+  table.profiles th, table.profiles td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+  table.profiles th {
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  table.profiles code { font-size: 0.85rem; }
+
+  code.inline {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    background: var(--accent-bg);
+    color: var(--accent-text);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+
+  .callout {
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--amber);
+    background: var(--amber-soft);
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin-top: 12px;
+  }
+  .callout strong { color: var(--amber); }
+
+  section.feedback {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+  }
+
+  section.feedback h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  section.feedback > p {
+    color: var(--muted);
+    max-width: 56ch;
+  }
+
+  .feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+  }
+
+  .feedback-card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .feedback-card h4 {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0 0 6px 0;
+  }
+  .feedback-card p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .feedback-card a {
+    color: var(--teal);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .feedback-card a:hover { text-decoration: underline; }
+
+  .contact-box {
+    margin-top: 16px;
+    border: 1px dashed var(--rule);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .contact-box strong { color: var(--ink-soft); }
+  .contact-box a {
+    color: var(--teal);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .contact-box a:hover { text-decoration: underline; }
+
+  details.faq {
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 0;
+  }
+  details.faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 0.95rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after {
+    content: "+";
+    color: var(--teal);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    transition: transform 0.15s ease;
+  }
+  details.faq[open] summary::after { transform: rotate(45deg); }
+  details.faq p {
+    margin: 10px 0 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  section.faq-section { margin-top: 40px; }
+  section.faq-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+  section.faq-section > p.intro {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 14px 0;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 480px) {
+    .step { padding-left: 44px; }
+    .step-number { width: 30px; height: 30px; font-size: 0.92rem; }
+    header.hero h1 { font-size: 1.7rem; }
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+
+  <header class="hero">
+    <p class="eyebrow">Pre-release beta &middot; ~10 minutes</p>
+    <h1>Help test Academic Document Checker</h1>
+    <p class="lede">
+      <code class="inline">doc-checker</code> is a command-line tool that checks a Word document
+      (thesis chapter, journal manuscript, grant proposal) against a set of academic formatting
+      and citation rules. It just went up on PyPI. Before we tell more people about it, we want
+      a handful of real people running it on a real document of theirs &mdash; that's you.
+    </p>
+    <div class="meta-row">
+      <span class="meta-pill">🧪 v0.4.1 beta</span>
+      <span class="meta-pill">📄 Needs a .docx, .txt or .md file</span>
+      <span class="meta-pill">💻 Windows, Mac or Linux</span>
+    </div>
+  </header>
+
+  <section class="checklist">
+    <h2>Before you start</h2>
+    <ul>
+      <li>A computer with Python already on it, or you're happy installing it (step 1 covers this)</li>
+      <li>One document of yours to test with &mdash; a thesis chapter, paper draft, or grant proposal, saved as <code class="inline">.docx</code></li>
+      <li>About 10 minutes, most of it waiting on installs</li>
+    </ul>
+  </section>
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Make sure Python is installed</h3>
+      <p>Open a terminal (see step 2 if you're not sure how) and run:</p>
+      <div class="codeblock">
+        <pre>python --version</pre>
+        <button class="copy-btn" data-copy="python --version">Copy</button>
+      </div>
+      <p class="expect"><strong>Expect to see:</strong> something like <code class="inline">Python 3.11.4</code></p>
+      <p class="note">If that fails, or shows Python 2.x, install Python from
+        <code class="inline">python.org/downloads</code> first &mdash; on the first install screen,
+        tick "Add Python to PATH" if you're on Windows, then come back here.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Open a terminal</h3>
+      <div class="platform-tabs">
+        <span class="platform-tab">🪟 Windows</span>
+        <span class="platform-tab">🍎 Mac</span>
+      </div>
+      <p><strong>Windows:</strong> press the Windows key, type <code class="inline">PowerShell</code>, press Enter.<br>
+      <strong>Mac:</strong> press <code class="inline">Cmd + Space</code>, type <code class="inline">Terminal</code>, press Enter.</p>
+      <p class="note">You'll type every command below into that window, then press Enter.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Install the tool</h3>
+      <div class="codeblock">
+        <pre>pip install academic-document-checker</pre>
+        <button class="copy-btn" data-copy="pip install academic-document-checker">Copy</button>
+      </div>
+      <p class="expect"><strong>Expect to see:</strong> a few lines ending in <code class="inline">Successfully installed academic-document-checker-0.4.1b1</code></p>
+    </div>
+
+    <div class="step">
+      <div class="step-number">4</div>
+      <h3>Check it worked</h3>
+      <div class="codeblock">
+        <pre>doc-checker --version</pre>
+        <button class="copy-btn" data-copy="doc-checker --version">Copy</button>
+      </div>
+      <p class="expect"><strong>Expect to see:</strong> <code class="inline">doc-checker, version 0.4.1b1</code></p>
+      <div class="callout">
+        <strong>If it says "command not found":</strong> close and reopen your terminal, then try
+        again &mdash; this usually fixes it on Windows. Still stuck? Skip to the FAQ at the bottom.
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">5</div>
+      <h3>Run it on your document</h3>
+      <p>Put the document you want to test somewhere easy to find (like your Desktop), then run:</p>
+      <div class="codeblock">
+        <pre><span class="comment"># replace the filename with your own, keep the quotes</span>
+doc-checker check "My Thesis Chapter.docx" --profile generic --format html --output report.html</pre>
+        <button class="copy-btn" data-copy='doc-checker check "My Thesis Chapter.docx" --profile generic --format html --output report.html'>Copy</button>
+      </div>
+      <p class="note">Swap <code class="inline">"My Thesis Chapter.docx"</code> for your file's actual name.
+        If your terminal is in a different folder than the document, either move the document there,
+        or type the full path in quotes instead of just the filename.</p>
+      <p>The <code class="inline">--profile</code> flag picks which rules it checks against:</p>
+      <table class="profiles">
+        <thead><tr><th>Profile</th><th>Best for</th></tr></thead>
+        <tbody>
+          <tr><td><code class="inline">generic</code></td><td>Any academic document &mdash; the safe default</td></tr>
+          <tr><td><code class="inline">phd-thesis</code></td><td>Thesis or dissertation chapters</td></tr>
+          <tr><td><code class="inline">medical-journal</code></td><td>Medical/clinical journal manuscripts</td></tr>
+          <tr><td><code class="inline">uk-academic-manuscript</code></td><td>British-English spelling + Vancouver referencing</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="step">
+      <div class="step-number">6</div>
+      <h3>Open the report</h3>
+      <p>That command created a file called <code class="inline">report.html</code> in the same folder. Open it like any file &mdash; double-click it, or run:</p>
+      <div class="codeblock">
+        <pre><span class="comment"># Windows</span>
+start report.html
+<span class="comment"># Mac</span>
+open report.html</pre>
+        <button class="copy-btn" data-copy="start report.html">Copy (Windows)</button>
+      </div>
+      <p class="note">It'll open in your browser: a summary of errors/warnings/suggestions, grouped by category, with the exact spot in your document each one refers to.</p>
+    </div>
+
+  </div>
+
+  <section class="feedback">
+    <h2>What we need from you</h2>
+    <p>Read through the report against your actual document, then tell us what you found. There's no wrong answer here &mdash; confusion and "that seems off" are exactly what we're looking for.</p>
+    <div class="feedback-grid">
+      <div class="feedback-card">
+        <h4>Did it catch real issues?</h4>
+        <p>Anything it flagged that was genuinely wrong in your document.</p>
+      </div>
+      <div class="feedback-card">
+        <h4>Did it miss anything?</h4>
+        <p>An issue you know is there that the report didn't mention.</p>
+      </div>
+      <div class="feedback-card">
+        <h4>Did it flag something wrongly?</h4>
+        <p>A warning that didn't actually apply, or felt wrong for your document type.</p>
+      </div>
+      <div class="feedback-card">
+        <h4>Was anything confusing?</h4>
+        <p>Error messages, a step above, or the report itself &mdash; tell us exactly where you got stuck.</p>
+      </div>
+    </div>
+    <div class="contact-box">
+      <strong>Feedback form:</strong>
+      <a href="https://docs.google.com/forms/d/1_Dt_108Hy4gRaydAJkbGeR0eVPEnHi_GWjjy73FHM1Y/viewform" target="_blank" rel="noopener">fill it out here</a>
+      &mdash; takes a couple of minutes.<br>
+      <strong>Prefer GitHub?</strong> Open an issue directly at
+      <code class="inline">github.com/darmsc/Academic_Document_Checker/issues</code>, or from the
+      <a href="https://pypi.org/project/academic-document-checker/" target="_blank" rel="noopener">PyPI page</a>
+      click <strong>Issue Tracker</strong> in the sidebar, then <strong>New issue</strong>.
+      Attaching the <code class="inline">report.html</code> file is the single most useful thing you can send.
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <h2>If something goes wrong</h2>
+    <p class="intro">Quick answers before you reach out.</p>
+
+    <details class="faq">
+      <summary>"pip: command not found" or "pip is not recognized"</summary>
+      <p>Your Python install didn't add itself to PATH. Try <code class="inline">python -m pip install academic-document-checker</code> instead (or <code class="inline">python3 -m pip install ...</code> on Mac).</p>
+    </details>
+
+    <details class="faq">
+      <summary>"doc-checker: command not found" after installing</summary>
+      <p>Close your terminal completely and reopen it, then try <code class="inline">doc-checker --version</code> again. If that still fails, run <code class="inline">python -m doc_checker.cli --version</code> as a workaround and let us know &mdash; this is useful to hear about either way.</p>
+    </details>
+
+    <details class="faq">
+      <summary>It says my document format isn't supported</summary>
+      <p>Right now it only reads <code class="inline">.docx</code>, <code class="inline">.txt</code>, and <code class="inline">.md</code> files &mdash; not <code class="inline">.doc</code> (the older Word format) or PDF. If your file is <code class="inline">.doc</code>, open it in Word and use "Save As" &rarr; <code class="inline">.docx</code> first.</p>
+    </details>
+
+    <details class="faq">
+      <summary>Permission denied, or it won't install</summary>
+      <p>Try adding <code class="inline">--user</code> to the install command: <code class="inline">pip install --user academic-document-checker</code>.</p>
+    </details>
+
+    <details class="faq">
+      <summary>The report flagged something I don't understand</summary>
+      <p>That's exactly what we want to hear about &mdash; include the exact wording of the message when you send feedback.</p>
+    </details>
+  </section>
+
+  <footer>
+    Academic Document Checker &middot; v0.4.1b1 (beta) &middot; a rule-based checker for thesis chapters, journal manuscripts, and grant proposals.
+  </footer>
+
+</main>
+
+<script>
+(function () {
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy') || '';
+      var original = btn.textContent;
+      try {
+        navigator.clipboard.writeText(text).then(function () {
+          btn.textContent = 'Copied';
+          setTimeout(function () { btn.textContent = original; }, 1500);
+        }).catch(function () {});
+      } catch (e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>
