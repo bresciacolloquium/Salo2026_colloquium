@@ -9,7 +9,7 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 ## Documents
 
 - [📄 Delegate Biographies & Keynote Abstracts](15.9%2026%20delegate%20bios%20and%20abstracts.pdf)
-- [📅 Timetable](14.9.26%20timetable%20.pdf)
+- [📅 Timetable](21.%209.26%202%20timetable%20.pdf)
 
 ---
 
@@ -17,23 +17,25 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 
 | Date | Time | Activity | Venue |
 |------|------|----------|-------|
-| Thursday 1 Oct | Morning | Anglo delegates arrive | Laurin |
-| Thursday 1 Oct | Afternoon | Icebreaker (led by NF) — Anglo plus friends | Salò |
-| Thursday 1 Oct | Evening | Supper | Salò |
+| Thursday 1 Oct | Morning | Anglo delegates arrive | Hotel Laurin |
+| Thursday 1 Oct | 14:30–16:30 | Icebreaker — Nigel Fleet & Jenny Wright; meet in Hotel Laurin Foyer | Hotel Laurin |
+| Thursday 1 Oct | 18:30 | Stroll and supper; meet in Hotel Laurin Foyer | Salò |
+| Friday 2 Oct | 09:30 | Meet at Hotel Laurin Foyer or Red Cross Building, Piazza Carmine 4 | — |
 | Friday 2 Oct | 10:00 | Bus to Brescia | — |
-| Friday 2 Oct | Morning | Keynote speakers (1–3) | Brescia University, Aula G |
+| Friday 2 Oct | 11:00 | Keynote lectures (1–3) | Brescia University, Aula G |
 | Friday 2 Oct | 12:00–13:15 | Lunch | Dental School |
-| Friday 2 Oct | 13:30 | Keynotes (4–5), Research Reports, BIP session | Aula Magna |
+| Friday 2 Oct | 13:30 | Keynotes, Research Reports, BIP session | Aula Magna |
 | Friday 2 Oct | 16:15 | Bus back to Salò | — |
-| Friday 2 Oct | 19:00 | Gala/Reception Dinner; Photocall in garden (weather permitting) at 19:20 | Laurin, Salò |
-| Saturday 3 Oct | — | Roundtable discussions (BIP to attend) | TBC |
-| Sunday 4 Oct | — | Cultural event; Supper; Anglo group depart | Salò |
+| Friday 2 Oct | 19:00 | Gala reception; Photocall in garden (weather permitting) at 19:20; Gala meal & charity raffle at 20:00 | Hotel Laurin |
+| Saturday 3 Oct | 09:30 | Roundtable discussions | Centro Sociale, Via Maria Montessori 10/12, Salò |
+| Saturday 3 Oct | Afternoon | Free to explore Salò and environs | — |
+| Sunday 4 Oct | — | Anglo group depart | — |
 
 ---
 
 ## Friday Programme — Keynotes & Research Presentations
 
-### Morning — Aula G, Brescia University
+### Morning — Aula G, Brescia University (from 11:00)
 
 1. **[Prof. Stylianos Hatzipanagos](#professor-stylianos-hatzipanagos)** — *Student Perspectives on GenAI and the Future of Assessment*
 2. **[Dr. Nicolas Giraudeau](#dr-nicolas-giraudeau)** — *Innovation and Digitalization in Oral Public Health*
@@ -41,23 +43,23 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 
 ### Afternoon — Aula Magna, 13:30
 
-4. **[Dr. Aristomenis Syngelakis](#dr-aristomenis-i-syngelakis)**
-5. **[Prof. Kenneth Eaton](#professor-kenneth-anthony-eaton) & [Dharmesh Chauhan](#dharmesh-chauhan)** — *The Use of AI to Check Manuscripts Prior to Submission to Scientific Journals*
+3. **[Prof. Kenneth Eaton](#professor-kenneth-anthony-eaton) & [Dharmesh Chauhan](#dharmesh-chauhan)** — *The Use of AI to Check Manuscripts Prior to Submission to Scientific Journals*
 
 ### Research Reports (Chair: [Professor Margaret Cox](#professor-margaret-cox))
 
-- **[Dr. Stephen Deboo](#dr-stephen-deboo)** — *Better Together? Exploring the Complementary Roles of Haptic Mixed Reality and Phantom-Head Simulation in Endodontic Training*
-- **[Dr. Chantal Burgess](#dr-chantal-burgess)** — *Dentistry in Bloom: Can Origami Help Us Assess and Develop Manual Dexterity?*
-- **[Prof. Dieter Schonwetter](#professor-dieter-schonwetter)** — *Round-up of the Day's Themes and Thoughts Going Forward to Saturday's Roundtable*
+4. **[Dr. Stephen Deboo](#dr-stephen-deboo)** — *Better Together? Exploring the Complementary Roles of Haptic Mixed Reality and Phantom-Head Simulation in Endodontic Training*
+5. **[Dr. Chantal Burgess](#dr-chantal-burgess)** — *Dentistry in Bloom: Can Origami Help Us Assess and Develop Manual Dexterity?*
+6. **[Dr. Aristomenis Syngelakis](#dr-aristomenis-i-syngelakis)**
+7. **[Prof. Dieter Schonwetter](#professor-dieter-schonwetter)** — *Round-up of the Day's Themes and Thoughts Going Forward to Saturday's Roundtable*
 
 ### BIP Scientific Methodology Session (Aula Magna, parallel)
-Led by [Dieter Schonwetter](#professor-dieter-schonwetter), [Ken Eaton](#professor-kenneth-anthony-eaton) & [Dr. Anne-Maria Brennan](#dr-ann-marie-brennan)
+Led by [Prof. Dieter Schonwetter](#professor-dieter-schonwetter), [Prof. Ken Eaton](#professor-kenneth-anthony-eaton) & [Dr. Anne-Maria Brennan](#dr-ann-marie-brennan)
 
 ---
 
 ## Saturday Roundtable
 
-Led by **[Prof. Dieter Schonwetter](#professor-dieter-schonwetter)** and **[Prof. Barry Quinn](#professor-barry-quinn)**, with support from invited leaders.
+Led by **[Prof. Barry Quinn](#professor-barry-quinn)** and **[Prof. Dieter Schonwetter](#professor-dieter-schonwetter)**, with support from invited leaders.
 
 ---
 
