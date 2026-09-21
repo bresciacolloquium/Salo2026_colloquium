@@ -10,7 +10,7 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 
 - [📄 Delegate Biographies & Keynote Abstracts](15.9%2026%20delegate%20bios%20and%20abstracts.pdf)
 - [📅 Timetable](21.%209.26%202%20timetable%20.pdf)
-- [🧪 Academic Document Checker — Beta Testing Guide](https://bresciacolloquium.github.io/Salo2026_colloquium/beta-testing.html) — the AI manuscript-checking tool from the Friday afternoon keynote, try it yourself
+- 🧪 <a href="https://bresciacolloquium.github.io/Salo2026_colloquium/beta-testing.html" target="_blank" rel="noopener noreferrer">Academic Document Checker — Beta Testing Guide</a> — the AI manuscript-checking tool from the Friday afternoon keynote, try it yourself
 
 ---
 
