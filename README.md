@@ -8,8 +8,8 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 
 ## Documents
 
-- [📄 Delegate Biographies & Keynote Abstracts](15.9%2026%20delegate%20bios%20and%20abstracts.pdf)
-- [📅 Timetable](21.%209.26%202%20timetable%20.pdf)
+- [📄 Delegate Biographies & Keynote Abstracts](24.9%2026%20delegate%20bios%20and%20abstracts.pdf)
+- [📅 Timetable](24.%209.26%20timetable.pdf)
 - 🧪 <a href="https://bresciacolloquium.github.io/Salo2026_colloquium/beta-testing.html" target="_blank" rel="noopener noreferrer">Academic Document Checker — Beta Testing Guide</a> — the AI manuscript-checking tool from the Friday afternoon keynote, try it yourself
 
 ---
@@ -44,14 +44,14 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 
 ### Afternoon — Aula Magna, 13:30
 
-3. **[Prof. Kenneth Eaton](#professor-kenneth-anthony-eaton) & [Dharmesh Chauhan](#dharmesh-chauhan)** — *The Use of AI to Check Manuscripts Prior to Submission to Scientific Journals*
+4. **[Prof. Kenneth Eaton](#professor-kenneth-anthony-eaton) & [Dharmesh Chauhan](#dharmesh-chauhan)** — *The Use of AI to Check Manuscripts Prior to Submission to Scientific Journals*
 
 ### Research Reports (Chair: [Professor Margaret Cox](#professor-margaret-cox))
 
-4. **[Dr. Stephen Deboo](#dr-stephen-deboo)** — *Better Together? Exploring the Complementary Roles of Haptic Mixed Reality and Phantom-Head Simulation in Endodontic Training*
-5. **[Dr. Chantal Burgess](#dr-chantal-burgess)** — *Dentistry in Bloom: Can Origami Help Us Assess and Develop Manual Dexterity?*
-6. **[Dr. Aristomenis Syngelakis](#dr-aristomenis-i-syngelakis)**
-7. **[Prof. Dieter Schonwetter](#professor-dieter-schonwetter)** — *Round-up of the Day's Themes and Thoughts Going Forward to Saturday's Roundtable*
+5. **[Dr. Stephen Deboo](#dr-stephen-deboo)** — *Better Together? Exploring the Complementary Roles of Haptic Mixed Reality and Phantom-Head Simulation in Endodontic Training*
+6. **[Dr. Chantal Burgess](#dr-chantal-burgess)** — *Dentistry in Bloom: Can Origami Help Us Assess and Develop Manual Dexterity?*
+7. **[Dr. Aristomenis Syngelakis](#dr-aristomenis-i-syngelakis)** — *The Cyprus Declaration on Oral Health: a key to the WHO strategy to make oral health a priority for Europe*
+8. **[Prof. Dieter Schonwetter](#professor-dieter-schonwetter)** — *Round-up of the Day's Themes and Thoughts Going Forward to Saturday's Roundtable*
 
 ### BIP Scientific Methodology Session (Aula Magna, parallel)
 Led by [Prof. Dieter Schonwetter](#professor-dieter-schonwetter), [Prof. Ken Eaton](#professor-kenneth-anthony-eaton) & [Dr. Anne-Maria Brennan](#dr-ann-marie-brennan)
@@ -88,7 +88,7 @@ Lead Data Analyst, Argus Media. 15+ years in Business Intelligence; expertise in
 Director of Student Affairs and Academic Services, Dr. Gerald Niznick College of Dentistry. Winner of the ACFD National Teaching Award (2018). 60+ publications, 200+ professional development workshops across 12 countries.
 
 ### Dr. Aristomenis I. Syngelakis
-President, Council of European Chief Dental Officers (CECDO). Former Chief Dental Officer of the Hellenic Republic (2020–2025). WHO Special Advisor.
+President, Council of European Chief Dental Officers (CECDO). Elected President-Elect of CECDO in Montpellier (September 2022). Co-President of the European Association of Dental Public Health (EADPH, 2024) and organiser of its 28th Congress in Crete. Former WHO Special Advisor on environmentally friendly and less invasive oral health care. Participated in the first-ever WHO Global Oral Health Meeting in Bangkok (November 2024). Holds degrees in Dentistry and Political & Administration Sciences, MScs in Health Management and Dental Public Health, and a PhD in Dental Public Health. Teaching staff at the University of Athens Faculty of Dentistry and University of Thessaly. Currently works at the Greek Ministry of Health, NSRF Executive Agency.
 
 ### Professor Margaret Cox
 Emerita Professor of IT in Education, King's College London. OBE (2001). International expert in technology in education; past President of NCUP; Honorary Professor, Dental Academy, University of Portsmouth.
