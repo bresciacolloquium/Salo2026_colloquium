@@ -54,7 +54,7 @@ An Anglo-Italian colloquium held in Salò and Brescia, Italy — a continuation 
 8. **[Prof. Dieter Schonwetter](#professor-dieter-schonwetter)** — *Round-up of the Day's Themes and Thoughts Going Forward to Saturday's Roundtable*
 
 ### BIP Scientific Methodology Session (Aula Magna, parallel)
-Led by [Prof. Dieter Schonwetter](#professor-dieter-schonwetter), [Prof. Ken Eaton](#professor-kenneth-anthony-eaton) & [Dr. Anne-Maria Brennan](#dr-ann-marie-brennan)
+Led by [Prof. Dieter Schonwetter](#professor-dieter-schonwetter), [Prof. Ken Eaton](#professor-kenneth-anthony-eaton) & [Dr. Anne-Maria Brennan](#dr-anne-marie-brennan)
 
 ---
 
@@ -99,7 +99,7 @@ Senior Clinical Lecturer in Restorative Dentistry & Undergraduate Programme Dire
 ### Dr. Chantal Burgess
 London-based dental surgeon; Associate Specialist in Oral Surgery, Chelsea & Westminster NHS Trust. PGCert in Dental Education (Distinction, University of Kent). Research interest in psychomotor skills and origami in dental education.
 
-### Dr. Ann-Marie Brennan
+### Dr. Anne-Marie Brennan
 Senior Lecturer (Associate Professor) in Professional Practice, Kent Business School, University of Kent. Course Director, MSc Advanced & Specialist Healthcare. Specialist in forensic biology and wildlife crime; author of five books.
 
 ### Professor Barry Quinn
