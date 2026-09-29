@@ -507,7 +507,7 @@
         <pre>pip install academic-document-checker</pre>
         <button class="copy-btn" data-copy="pip install academic-document-checker">Copy</button>
       </div>
-      <p class="expect"><strong>Expect to see:</strong> a few lines ending in <code class="inline">Successfully installed academic-document-checker-0.4.1b1</code></p>
+      <p class="expect"><strong>Expect to see:</strong> a few lines ending in <code class="inline">Successfully installed academic-document-checker-0.4.1b2</code></p>
     </div>
 
     <div class="step">
@@ -517,7 +517,7 @@
         <pre>doc-checker --version</pre>
         <button class="copy-btn" data-copy="doc-checker --version">Copy</button>
       </div>
-      <p class="expect"><strong>Expect to see:</strong> <code class="inline">doc-checker, version 0.4.1b1</code></p>
+      <p class="expect"><strong>Expect to see:</strong> <code class="inline">doc-checker, version 0.4.1b2</code> (or later)</p>
       <div class="callout">
         <strong>If it says "command not found":</strong> close and reopen your terminal, then try
         again &mdash; this usually fixes it on Windows. Still stuck? Skip to the FAQ at the bottom.
@@ -530,8 +530,8 @@
       <p>Put the document you want to test somewhere easy to find (like your Desktop), then run:</p>
       <div class="codeblock">
         <pre><span class="comment"># replace the filename with your own, keep the quotes</span>
-doc-checker check "My Thesis Chapter.docx" --profile uk-academic-manuscript --format correction-log, --output report.html</pre>
-        <button class="copy-btn" data-copy='doc-checker check "My Thesis Chapter.docx" --profile uk-academic-manuscript --format correction-log, --output report.html'>Copy</button>
+doc-checker check "My Thesis Chapter.docx" --profile generic --format html --output report.html</pre>
+        <button class="copy-btn" data-copy='doc-checker check "My Thesis Chapter.docx" --profile generic --format html --output report.html'>Copy</button>
       </div>
       <p class="note">Swap <code class="inline">"My Thesis Chapter.docx"</code> for your file's actual name.
         If your terminal is in a different folder than the document, either move the document there,
@@ -546,6 +546,16 @@ doc-checker check "My Thesis Chapter.docx" --profile uk-academic-manuscript --fo
           <tr><td><code class="inline">uk-academic-manuscript</code></td><td>British-English spelling + Vancouver referencing</td></tr>
         </tbody>
       </table>
+      <div class="callout">
+        <strong>Using <code class="inline">uk-academic-manuscript</code>?</strong> In the command
+        above, change <code class="inline">--profile generic</code> to
+        <code class="inline">--profile uk-academic-manuscript</code> and
+        <code class="inline">--format html</code> to
+        <code class="inline">--format correction-log</code> &mdash; that gives you an
+        editorial-style report with paragraph references (<code class="inline">&para;123</code>)
+        and a suggested-fix table, instead of the general-purpose report. Don't run both
+        commands; just adjust the one above to match your profile.
+      </div>
     </div>
 
     <div class="step">
@@ -628,7 +638,7 @@ open report.html</pre>
   </section>
 
   <footer>
-    Academic Document Checker &middot; v0.4.1b1 (beta) &middot; a rule-based checker for thesis chapters, journal manuscripts, and grant proposals.
+    Academic Document Checker &middot; v0.4.1b2 (beta) &middot; a rule-based checker for thesis chapters, journal manuscripts, and grant proposals.
   </footer>
 
 </main>
